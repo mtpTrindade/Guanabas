@@ -1,0 +1,146 @@
+main{
+    height: auto;
+    max-width: 640px;
+    min-width: 360px;
+
+    background: darkgray;
+}
+
+main h1, main h2, a{
+    padding: 8px;
+}
+
+.text{
+    height: 300px;
+    width: 30vw;
+    min-width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: whitesmoke;
+    /*box-shadow: inset 0px 0px 3px 1px black;*/
+}
+
+.link{
+    height: 300px;
+    width: 70vw;
+    min-width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover{
+    box-shadow: 1px 0px 3px 1px black; 
+}
+
+section a{
+    height: auto;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+}
+
+section a:hover{
+    text-shadow: -1px -1px 4px black;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+#wolrds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+#wolrds h2{
+    text-align: center;
+}
+
+#wolrds .link{
+    background-image: url('../images/ruler-wolrds.jpg');
+    background-position: top right;
+}
+
+#wolrds .link:hover{
+    background-image: url('../images/ruler-wolrds.jpg');
+    background-position: bottom center;
+    transition: 10s;
+}
+
+#lck{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+#lck .link{
+    background-image: url('../images/ruler-lck.jpg');
+    background-position: bottom left;
+}
+
+#lck .link:hover{
+    background-image: url('../images/ruler-lck.jpg');
+    background-position: center center;
+    transition: 10s;
+}
+
+#lpl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+#lpl .link{
+    background-image: url('../images/ruler-lpl.jpg');
+    background-position: top center;
+}
+
+#lpl .link:hover{
+    background-image: url('../images/ruler-lpl.jpg');
+    background-position: top right;
+    transition: 10s;
+}
+
+#msi{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+}
+
+#msi .link{
+    background-image: url('../images/ruler-msi.jpg');
+    background-position: center center;
+}
+
+#msi .link:hover{
+    background-image: url('../images/ruler-msi.jpg');
+    background-position: top left;
+    transition: 10s;
+}
+
+
+
+

@@ -1,0 +1,120 @@
+main{
+    height: 100vh;
+    width: 100vw;
+
+    position: absolute;
+    bottom: 0;
+
+    background-image: url('../assets/images/monitor-frame-05.png');
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.display{
+    height: 40vh;
+    width: 45vw;
+
+    margin-top: 17vh;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+iframe{
+    height: 95%;
+    width: 95%;
+
+    background-position: center center; 
+}
+
+li{
+    list-style: none;
+
+    margin: 16px;
+}
+
+a{
+    display: block;
+
+    height: 48px;
+}
+
+.monitor{
+    height: 400px;
+    width: 70%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: rgb(68, 68, 68);
+}
+
+.navbar{
+    height: 400px;
+    width: 30%;
+
+    background-color: rgb(102, 0, 0);
+}
+
+.rito{
+    background-image: url('/assets/images/riot-red-icon.jpg');
+    background-position: center center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.lol{
+    background-image: url('/assets/images/lol-icon.png');
+    background-position: center center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.vava{
+    background-image: url('/assets/images/vava-icon-standard.png');
+    background-position: center center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.tft{
+    background-image: url('/assets/images/tft-icon-3.png');
+    background-position: center center;
+
+    background-size: 48px;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.lor{
+    background-image: url('/assets/images/lor-icon.png');
+    background-position: center center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.wildrift{
+    background-image: url('/assets/images/wr-icon.png');
+    background-position: center center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: transparent;
+}

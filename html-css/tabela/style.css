@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+h1, p, caption{
+    padding: 8px;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    min-height: 5vh;
+
+    padding: 8px;
+
+    background-image: linear-gradient(to left, black, rgb(29, 29, 29), black);
+
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 8px;
+    padding: 8px 24px;
+
+    background-color: rgb(54, 54, 54);
+    border: 2px solid rgb(29, 29, 29);
+}
+
+table{
+    border-collapse: collapse;
+
+    color: whitesmoke;
+}
+
+td{
+    padding: 8px;
+
+    background-color: grey;
+    border: 1px solid whitesmoke;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.lll{
+    background-color: rgb(0, 146, 0);
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.vks{
+    background-color: rgb(131, 35, 131);
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.los, .kbm{
+    background-color: rgb(255, 68, 0);
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.red{
+    background-color: red;
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.fx, .fur, .pain{
+    background-color: rgb(5, 5, 5);
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.intz{
+    background-color: rgb(65, 65, 65);
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.lbrt{
+    background-color:turquoise;
+
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+.classificados{
+    background-color: darkgreen;
+}
+
+.invisivel{
+    border: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+footer{
+    background-image: linear-gradient(to left, black, rgb(29, 29, 29), black);
+
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}

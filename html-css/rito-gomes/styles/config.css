@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html::-webkit-scrollbar{
+    size: 0px;
+    color: transparent;
+}
+
+body{
+    background-color: black;
+    
+    background-image: url('../assets/images/html-background-02.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
