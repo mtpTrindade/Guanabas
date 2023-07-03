@@ -59,10 +59,13 @@ a{
 
     border-radius: 50%;
     box-shadow: 1px 1px 4px rgb(48, 0, 0);
+    box-sizing: border-box;
 }
 
 a:hover{
     box-shadow: 1px 1px 6px rgb(192, 0, 0);
+    border: 2px solid whitesmoke;
+    transition: .1s;
 }
 
 .monitor{
