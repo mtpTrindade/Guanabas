@@ -6,7 +6,6 @@ main{
     bottom: 0;
 
     background-image: url('../assets/images/monitor-frame-05.png');
-    background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -17,8 +16,11 @@ main{
 }
 
 .display{
-    height: 40vh;
-    width: 45vw;
+    position: relative;
+    top: 30px;
+    left: 0px;
+
+    width: 600px;
 
     margin-top: 17vh;
 
@@ -29,6 +31,10 @@ main{
 }
 
 iframe{
+    position: relative;
+    top: 0px;
+    left: 0px;
+
     height: 95%;
     width: 95%;
 
@@ -38,7 +44,7 @@ iframe{
 li{
     list-style: none;
 
-    margin: 16px;
+    margin: 8px;
 }
 
 a{
@@ -48,7 +54,6 @@ a{
 }
 
 .monitor{
-    height: 400px;
     width: 70%;
 
     display: flex;
@@ -59,7 +64,6 @@ a{
 }
 
 .navbar{
-    height: 400px;
     width: 30%;
 
     background-color: rgb(102, 0, 0);
