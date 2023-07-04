@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 02</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <form action="formulario.js">
+            <p>
+                <label for="idNome">Nome:</label>
+                <input required type="text" name="Nome" id="idNome"
+                minlength="3" maxlength="21" size="21"
+                placeholder="Digite seu nome completo..."
+                autocomplete="name">
+            </p>
+
+            <p>
+                <label for="idIdade">Data de Nascimento:</label>
+                <input required type="date" name="Idade" id="idIdade">
+            </p>
+
+            <p>
+                <label for="idMedia">Média:</label>
+                <input required type="number" name="Media" id="idMedia"
+                min="0" max="10" step="0.1">
+            </p>
+
+            <p>
+                <label for="idHora">Horário de chegada:</label>
+                <input required type="time" name="Hora" id="idHora">
+            </p>
+
+
+        </form>
+    </main>
+</body>
+</html>

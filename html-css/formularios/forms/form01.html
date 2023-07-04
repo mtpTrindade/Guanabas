@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Formulários em HTML</h1>
+    </header>
+    <main>
+        <form action="formulario.js" method="post">
+            <h2>Exercício 01</h2>
+            <p><label for="idNome">Nome </label>
+                <input type="text" name="Nome" id="idNome"></p>
+
+            <p><label for="idSobrenome">Sobrenome</label> 
+                <input type="text" name="Sobrenome" id="idSobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+
+        <form action="formulario.js" method="post" autocomplete="on">
+            <h2>Exercício 02</h2>
+            
+                <div>
+                    <label for="idUsuario">Usuário</label>
+                    <input required type="text" name="Usuario" id="idUsuario"
+                    minlength="3" maxlength="21" size="15"
+                    placeholder="Digite seu usuário..."
+                    autocomplete="username">
+                </div>
+                <br>
+                <div>
+                    <label for="idSenha">Senha</label>
+                    <input required type="password" name="Senha" id="idSenha"
+                    minlength="5" maxlength="21" size="15"
+                    placeholder="Digite sua senha..."
+                    autocomplete="current-password">
+                </div>
+                <br>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+
+            
+        </form>
+    </main>
+</body>
+</html>
