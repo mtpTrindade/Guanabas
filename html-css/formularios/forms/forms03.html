@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 03</title>
+</head>
+<body>
+    <header>
+        <h1>Fieldsets</h1>
+    </header>
+
+    <main>
+        <form action="" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="idNome">Nome:</label>
+                    <input required type="text" name="Nome" id="idNome"
+                    minlength="3" maxlength="21" size="21"
+                    autocomplete="name">
+                </p>
+                <p>
+                    <label for="idSobrenome">Sobrenome:</label>
+                    <input required type="text" name="Sobrenome" id="idSobrenome"
+                    minlength="3" maxlength="21" size="21"
+                    autocomplete="additional-name">
+                </p>
+                <p>
+                    <label for="idNascimento">Data de Nascimento:</label>
+                    <input required type="date" name="Nascimento" id="idNascimento"
+                    autocomplete="bday-day">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados para Contato</legend>
+                <p>
+                    <label for="idEmail">Email:</label>
+                    <input required type="email" name="Email" id="idEmail"
+                    size="30"
+                    autocomplete="email">
+                </p>
+                <p>
+                    <label for="idCelular">Celular:</label>
+                    <input required type="tel" name="Celular" id="idCelular"
+                    pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"
+                    autocomplete="tel">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gênero</legend>
+                <p>
+                    <input type="radio" name="Genero" id="idMasculino">
+                    <label for="idMasculino"> Masculino</label>
+                </p>
+                <p>
+                    <input type="radio" name="Genero" id="idFeminino">
+                    <label for="idFeminino"> Feminino</label>
+                </p>
+                <p>
+                    <input type="radio" name="Genero" id="idOutro">
+                    <label for="idOutro"> Outro</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Idiomas</legend>
+                <p>
+                    <input type="checkbox" name="Ingles" id="idIngles">
+                    <label for="idIngles"> Inglês</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Portugues" id="idPortugues">
+                    <label for="idPortugues"> Português</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Espanhol" id="idEspanhol">
+                    <label for="idEspanhol"> Espanhol</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Mandarim" id="idMandarim">
+                    <label for="idMandarim"> Mandarim</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Alemao" id="idAlemao">
+                    <label for="idAlemao"> Alemão</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Coreano" id="idCoreano">
+                    <label for="idCoreano"> Coreano</label>
+                </p><p>
+                    <input type="checkbox" name="OutroIdioma" id="idOutroIdioma">
+                    <label for="idOutroIdioma"> Outro</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cor Favorita</legend>
+                <p>
+                    <label for="idCor">Cor Favorita:</label>
+                    <input type="color" name="Cor" id="idCor" value="#123456">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nível de Satisfação</legend>
+                <p>
+                    <label for="idSatisfacao"> Nível de Satisfação:</label>
+                    <input type="range" name="Satisfacao" id="idSatisfacao"
+                    min="1" max="5">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Currículo</legend>
+                <p>
+                    <label for="idCurriculo">Currículo:</label>
+                    <input type="file" name="Curriculo" id="idCurriculo">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submeter</legend>
+                <p>
+                    <input type="submit" value="Confirmar">
+                    <input type="reset" value="Cancelar">
+                </p>
+            </fieldset>
+
+        </form>
+
+    </main>
+</body>
+</html>
