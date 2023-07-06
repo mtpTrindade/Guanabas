@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 05</title>
+</head>
+<body>
+    <header>
+        <h1>Um pouquinho de Java Script</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Calculadora</legend>
+                <p>
+                    <label for="idN1">Primeiro Número: </label>
+                    <input type="number" name="N1" id="idN1"
+                    min="0" max="1000"
+                    oninput="idSoma.innerHTML = Number(idN1.value) + Number(idN2.value)">
+                </p>
+
+                <p>
+                    <label for="idN2">Segundo Número: </label>
+                    <input type="number" name="N2" id="idN2"
+                    min="0" max="1000"
+                    oninput="idSoma.innerHTML = Number(idN1.value) + Number(idN2.value)">
+                </p>
+
+                <p>
+                    <label for="idSoma">Soma:</label>
+                    <output name="Soma" id="idSoma">0</output>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dê uma Nota</legend>
+                <p>
+                    <label for="idNota">Nota:</label>
+                    <input type="range" name="Nota" id="idNota" 
+                    min="0" max="10"
+                    oninput="idValor.innerHTML = Number(idNota.value)">
+                    <output id="idValor"> 5</output>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Idade</legend>
+                <p>
+                    <label for="idAno">Em que ano você nasceu?</label>
+                    <input type="number" name="Ano" id="idAno"
+                    min="1900" max="2023" 
+                    oninput="calculoIdade()">
+                </p>
+                <p>
+                    <label for="idIdade">Sua idade é </label>
+                    <output id="idIdade">0</output> anos...
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        function calculoIdade() {
+            let atual = new Date().getFullYear()
+            idIdade.innerHTML = Number(atual) - Number(idAno.value)
+        }
+    </script>
+</body>
+</html>
