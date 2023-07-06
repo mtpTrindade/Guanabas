@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 04</title>
+</head>
+<body>
+    <header>
+        <h1>Mais Formulários</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Qual jogo você mais gosta?</legend>
+                <p>
+                    <label for="idJogo">Jogos: </label>
+                    <select name="Jogo" id="idJogo">
+                        <optgroup label="Rito Gomes">
+                            <option value="lol">League</option>
+                            <option value="vava">Valorant</option>
+                            <option value="tft">TFT</option>
+                            <option value="lor">Runeterra</option>
+                            <option value="wr">Wild Rift</option>
+                        </optgroup>
+
+                        <optgroup label="Game Pass">
+                            <option value="Forza">Forza</option>
+                            <option value="Fifa">Fifa</option>
+                            <option value="Halo">Halo</option>
+                            <option value="FG">Fall Guys</option>
+                            <option value="RL">Rocket League</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de jogador...</legend>
+                <p>
+                    <label for="idTipo">Tipo:</label>
+                    <input type="text" name="Tipo" id="idTipo" list="idTipoList">
+                    <datalist id="idTipoList">
+                        <option>Agressivo</option>
+                        <option>Frio e Calculista</option>
+                        <option>For Fun</option>
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Deixe uma mensagem:</legend>
+                <p>
+                    <textarea name="Mensagem" id="idMensagem" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
