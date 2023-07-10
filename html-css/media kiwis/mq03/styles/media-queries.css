@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+/* Mobile */
+@media screen {
+
+    html{
+        height: 100vh;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+
+        background: url(../images/back-phone.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    main{
+        width: 80vw;
+
+        margin: 8px;
+        padding: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 8px;
+    }
+
+    img#phone{display: block;}
+}

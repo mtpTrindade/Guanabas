@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin: 8px;
+
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px black;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+img#phone{display: none;}
+img#pc{display: none;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#tv{display: none;}
