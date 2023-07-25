@@ -123,3 +123,24 @@ input#button:active{
 
     transition-duration: 0.1s;
 }
+
+#container{
+    width: 100%;
+    margin: 8px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    border: 4px outset var(--golden-details);
+}
+
+.campeao{
+    height: 128px;
+    margin: 0px 8px;
+
+    border-radius: 8px;
+    border: 4px outset var(--golden-details);
+}
