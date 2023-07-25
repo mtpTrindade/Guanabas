@@ -17,10 +17,12 @@
     --golden-details: rgb(219, 156, 31);
 
     --text-shadow: 1px 1px 3px black;
+    --box-shadow: 2px 2px 4px black;
 }
 
 body{
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -34,7 +36,7 @@ header{
     width: 500px;
 
     padding: 16px;
-    margin: 8px;
+    margin: 64px 8px 8px 8px;
 
     color: var(--white);
     text-shadow: var(--text-shadow);
@@ -43,6 +45,7 @@ header{
     background-color: var(--background-dark);
     border-radius: 8px;
     border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
 }
 
 main{
@@ -60,6 +63,7 @@ main{
     background-color: var(--background-ligth);
     border-radius: 8px;
     border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
 }
 
 div#select{
@@ -69,20 +73,23 @@ div#select{
 
 select#season{
     appearance: none;
-    height: 32px;
-    width: 72px;
+    height: 48px;
+    width: 84px;
 
     margin: 0px 8px;
 
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 
     border-radius: 8px;
     border: none;
+    box-shadow: var(--text-shadow);
 }
 
 select#season:hover{
     background-color: var(--golden-details);
+    box-shadow: var(--box-shadow);
+
     transition-duration: 0.3s;
 }
 
@@ -104,13 +111,14 @@ input#button{
 
     border-radius: 8px;
     border: none;
+    box-shadow: var(--text-shadow);
 }
 
 input#button:hover{
     outline: none;
 
     background-color: var(--golden-details);
-    box-shadow: 1px 1px 3px black;
+    box-shadow: var(--box-shadow);
 
     transition-duration: 0.3s;
 }
@@ -130,17 +138,62 @@ input#button:active{
     padding: 8px;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     background-color: var(--background-dark);
     border-radius: 8px;
     border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
 }
 
-.campeao{
-    height: 128px;
-    margin: 0px 8px;
+.beta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campeao{ 
+    height: 282px;
+    width: 250px;
+    margin: 8px;
 
     border-radius: 8px;
     border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
+}
+
+.time{ 
+    width: 405px;
+    margin: 8px;
+
+    border-radius: 8px;
+    border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
+}
+
+.texto{
+    margin: 8px;
+    padding: 4px;
+
+    text-align: start;
+    font-size: 1.3em;
+}
+
+footer{
+    width: 500px;
+
+    padding: 8px;
+    margin: 8px;
+
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    line-height: 16px;
+    font-size: 0.9em;
+
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    border: 4px outset var(--golden-details);
+    box-shadow: var(--box-shadow);
 }
