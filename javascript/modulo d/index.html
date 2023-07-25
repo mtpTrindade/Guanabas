@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 01</title>
+    <title>Campeão²</title>
 
     <script src="scripts.js"></script>
 
@@ -11,22 +11,32 @@
 </head>
 <body>
     <header>
-        <h1>Login</h1>
+        <h1>Descubra qual Campeão foi o Campeão dos Campeões!</h1>
+        <h2>E em qual Season...</h2>
     </header>
     <main>
-        <div id="loginBox">
-            <div id="userData">
-                <p>Usuário:</p>
-                <input id="loginData" type="text" placeholder="Nome ou E-mail">
-                <p>Senha:</p>
-                <input id="loginData" type="password" placeholder="Senha" name="senha" id="idSenha">    
-            </div>
-
-           <div id="dataCommit">
-                <input id="loginButton" type="button" value="Login">
-                <a href="#">Esqueceu sua senha?</a>
-           </div>  
+        <div id="select">
+            <h1>Season:</h1>
+            <select name="Season" id="season">
+                <option value="null"></option>
+                <option value="0">Beta</option>
+                <option value="1">Season 1</option>
+                <option value="2">Season 2</option>
+                <option value="3">Season 3</option>
+                <option value="4">Season 4</option>
+                <option value="5">Season 5</option>
+                <option value="6">Season 6</option>
+                <option value="7">Season 7</option>
+                <option value="8">Season 8</option>
+                <option value="9">Season 9</option>
+                <option value="10">Season 10</option>
+                <option value="11">Season 11</option>
+                <option value="12">Season 12</option>
+                <option value="13">Season 13</option>
+            </select>
         </div>
+            <input id="button" type="button" value="Descobrir" onclick="Champion()">
+        
     </main> 
 </body>
 </html>
