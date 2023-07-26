@@ -100,6 +100,11 @@ select#season:focus{
     transition-duration: 0.3s;
 }
 
+div#select > input#button {
+    height: 24px;
+    width: 32px;
+}
+
 input#button{
     height: 32px;
     width: 72px;
