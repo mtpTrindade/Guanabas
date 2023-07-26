@@ -374,10 +374,3 @@ function Champion(){
     seasonCheck = season
 }
 
-function Foward(){
-    
-}
-
-function Back(){
-
-}

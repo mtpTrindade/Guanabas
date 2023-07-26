@@ -100,12 +100,14 @@ select#season:focus{
     transition-duration: 0.3s;
 }
 
-div#select > input#button {
+/*
+div#select > input.button {
     height: 24px;
     width: 32px;
 }
+*/
 
-input#button{
+input.button{
     height: 32px;
     width: 72px;
 
@@ -119,7 +121,7 @@ input#button{
     box-shadow: var(--text-shadow);
 }
 
-input#button:hover{
+input.button:hover{
     outline: none;
 
     background-color: var(--golden-details);
@@ -129,7 +131,7 @@ input#button:hover{
 }
 
 
-input#button:active{
+input.button:active{
     outline: none;
 
     box-shadow: inset 1px 1px 3px black;
