@@ -27,22 +27,6 @@ main{
     border-radius: 8px;
 }
 
-#poema{
-    margin-top: 16px;
-    padding: 16px;
-
-    background-color: rgb(30, 220, 180);
-    border-radius: 8px;
-
-    color: whitesmoke;
-    text-shadow: 1px 1px 2px black;
-}
-
-#quintoVerso{
-    color: transparent;
-    text-shadow: none;
-}
-
 h1{
     margin-top: 16px;
     padding: 8px;
