@@ -9,16 +9,25 @@ resposta.id = 'resposta'
 var paragrafo = document.createElement('p')
 
 function calculo(){
-    main.appendChild(resposta)
-    resposta.appendChild(paragrafo)
 
     if (start.value.length == 0 || end.value.length == 0 || step.value.length == 0){
+        main.appendChild(resposta)
+        resposta.appendChild(paragrafo)
         paragrafo.innerHTML = `[ERRO] Dados insuficientes.\n Por favor verifique se todos os campos foram preenchidos e tente novamente...`
     }else{
-
-        for (var i = Number(start.value); Number(start.value) >= Number(end.value); i += Number(step.value)){
-            console.log(i)
-            paragrafo.innerHTML += `oi `
+        main.appendChild(resposta)
+        resposta.appendChild(paragrafo)
+        
+        for (var i = Number(start.value); Number(start.value) <= Number(end.value); i += Number(step.value)){
+            paragrafo.innerHTML += `${Number(start.value)} `
         }
+        /*if (Number(start.value) <= Number(end.value)){
+            
+        } else {
+            for (var i = Number(start.value); Number(start.value) >= Number(end.value); i -= Number(step.value)){
+                paragrafo.innerHTML += `${Number(start.value)} `
+            }
+        }*/
     }
+      
 }
