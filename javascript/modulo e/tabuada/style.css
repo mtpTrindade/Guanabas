@@ -7,28 +7,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ESTRUTURA BASE */
+
 body{
     padding: 8px;
-
-    background-color: rgba(0, 105, 105, 0.5);
-}
-
-main{
-    min-height: 50vh;
-
-    margin-top: 16px;
-    padding: 16px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    background-color: rgb(0, 173, 173);
-    border-radius: 8px;
+
+    background-color: rgba(0, 105, 105, 0.5);
 }
 
-h1{
-    margin-top: 16px;
+header{
+    width: 400px;
+
+    margin: 16px 8px 8px 8px;
     padding: 8px;
 
     background-color: rgb(30, 220, 180);
@@ -37,4 +31,166 @@ h1{
     color: whitesmoke;
     text-shadow: 1px 1px 4px black;
     text-align: center;
+
+    box-shadow: 2px 2px 4px black;
+}
+
+main{
+    width: 400px;
+
+    margin: 8px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(0, 173, 173);
+    box-shadow: 2px 2px 4px black;
+    border-radius: 8px;
+}
+
+/* DIV#TABUADA */
+
+div#input{
+    width: 280px;
+
+    margin: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(30, 220, 180);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+/* INPUT#DATAIN */
+
+input#dataIn{
+    width: 90%;
+
+    margin: 8px;
+    padding: 4px;
+
+    appearance: none;
+    outline: none;
+    border: none;
+
+    font-style: italic;
+    text-align: center;
+
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+input#dataIn:hover{
+    box-shadow: 2px 2px 4px black;
+
+    transition-duration: 0.3s;
+}
+
+input#dataIn:focus{
+    box-shadow: inset 1px 1px 2px black;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* INPUT#BUTTON */
+
+input#button{
+    appearance: none;
+    outline: none;
+    border: none;
+
+    margin: 8px;
+    padding: 8px 12px;
+
+    font-weight: bolder;
+    font-size: 1em;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+
+    background-color: rgb(0, 173, 173);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+input#button:hover{
+    background-color: rgba(0, 173, 173, 0.7);
+    box-shadow: 2px 2px 4px black;
+    border-radius: 8px;
+
+    transition-duration: 0.3s;
+}
+
+input#button:active{
+    background-color: rgba(0, 173, 173);
+    box-shadow: inset 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+/* DIV#RESPOSTA */
+
+div#resposta{
+    width: 280px;
+
+    margin: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    
+    background-color: rgb(30, 220, 180);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+select#tabuada{
+    height: auto;
+
+    margin: 8px;
+    padding: 8px;
+
+    appearance: none;
+    outline: none;
+    border: none;
+
+    font-style: italic;
+
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+select#tabuada::-webkit-scrollbar{
+    appearance: none;
+    width: 0px;
+}
+
+option{
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+option:hover{
+    background-color: aquamarine;
+    box-shadow: 1px 1px 2px black;
+
+    transition-duration: 0.3s;
+}
+
+option:checked{
+    appearance: none;
+    background-color: rgb(0, 173, 173);
+    box-shadow: 1px 1px 2px black;
 }

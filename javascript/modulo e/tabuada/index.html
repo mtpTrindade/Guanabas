@@ -10,14 +10,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contador</h1>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
     <main>
-        <div id="calculo">
+        <div id="input">
+            <input type="number" 
+            name="inicio" id="dataIn"
+            placeholder="Insira um número"
+            required>
 
+            <input type="button" id="button" value="Calcular" onclick="tabuada()">
         </div>
-        <div id="resposta">
-
-        </div>
+            
     </main> 
 </body>
 </html>
