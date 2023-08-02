@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ESTRUTURA BASE */
+
+body{
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(0, 105, 105, 0.5);
+}
+
+header{
+    width: 400px;
+
+    margin: 16px 8px 8px 8px;
+    padding: 8px;
+
+    background-color: rgb(30, 220, 180);
+    border-radius: 8px;
+
+    color: whitesmoke;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+
+    box-shadow: 2px 2px 4px black;
+}
+
+main{
+    width: 400px;
+
+    margin: 8px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(0, 173, 173);
+    box-shadow: 2px 2px 4px black;
+    border-radius: 8px;
+}
+
+/* DIV#DATAIN */
+
+section#dataIn{
+    width: 280px;
+
+    margin: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(30, 220, 180);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+/* LABEL */
+
+label{
+    width: 100%;
+ 
+    margin: 4px;
+    padding: 4px;
+
+    display: flex;
+    justify-content: center;
+
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* INPUT#NUMBERIN */
+
+input#numberIn{
+    width: 90%;
+
+    margin: 8px;
+    padding: 4px 8px;
+
+    appearance: none;
+    outline: none;
+    border: none;
+
+    text-align: center;
+    font-style: italic;
+
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+input#numberIn:hover{
+    box-shadow: 2px 2px 4px black;
+
+    transition-duration: 0.3s;
+}
+
+input#numberIn:focus{
+    box-shadow: inset 1px 1px 2px black;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* INPUT#BUTTON */
+
+input#button{
+    appearance: none;
+    outline: none;
+    border: none;
+
+    margin: 8px;
+    padding: 8px 12px;
+
+    font-weight: bolder;
+    font-size: 1em;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px black;
+
+    background-color: rgb(0, 173, 173);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+input#button:hover{
+    background-color: rgba(0, 173, 173, 0.7);
+    box-shadow: 2px 2px 4px black;
+    border-radius: 8px;
+
+    transition-duration: 0.3s;
+}
+
+input#button:active{
+    background-color: rgba(0, 173, 173);
+    box-shadow: inset 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+/* DIV#RESPOSTA */
+
+section#answer{
+    width: 280px;
+
+    margin: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    
+    background-color: rgb(30, 220, 180);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+/* DIV#ERRO */
+
+div#erro{
+    width: 90%px;
+
+    margin: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    
+    background-color: rgb(0, 173, 173);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 8px;
+}
+
+
+/* SELECT#VETOR */
+
+select#vetor{
+    height: auto;
+    width: 56px;
+
+    margin: 8px;
+    padding: 8px;
+
+    appearance: none;
+    outline: none;
+    border: none;
+
+    font-style: italic;
+    text-align: center;
+
+    box-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+}
+
+select#vetor::-webkit-scrollbar{
+    appearance: none;
+    width: 0px;
+}
+
+option{
+    padding: 2px 8px;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+option:hover{
+    background-color: aquamarine;
+    box-shadow: 1px 1px 2px black;
+
+    transition-duration: 0.3s;
+}
+
+option:checked{
+    appearance: none;
+    background-color: rgb(0, 173, 173);
+    box-shadow: 1px 1px 2px black;
+}
