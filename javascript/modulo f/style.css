@@ -69,7 +69,7 @@ section#dataIn{
 
 /* LABEL */
 
-label{
+#inputLabel, #answerLabel{
     width: 100%;
  
     margin: 4px;
@@ -163,7 +163,6 @@ section#answer{
     flex-direction: column;
     align-items: center;
 
-    font-weight: bolder;
     color: whitesmoke;
     text-shadow: 1px 1px 2px black;
     
@@ -184,6 +183,7 @@ div#erro{
     flex-direction: column;
     align-items: center;
 
+    font-weight: bolder;
     color: whitesmoke;
     text-shadow: 1px 1px 2px black;
     
@@ -191,7 +191,6 @@ div#erro{
     box-shadow: 2px 2px 2px black;
     border-radius: 8px;
 }
-
 
 /* SELECT#VETOR */
 

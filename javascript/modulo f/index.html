@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="scripts.js"></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -16,8 +16,8 @@
     
     <main>
         <section id="dataIn">
-            <label for="numberIn">Adicione um Número:</label>
-            <input type="number" 
+            <label id="inputLabel" for="numberIn">Adicione um Número:</label>
+            <input type="number"
             name="numero" id="numberIn" 
             placeholder="De 0 a 100"
             required>
