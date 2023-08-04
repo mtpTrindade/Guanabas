@@ -3,7 +3,7 @@
 var vetor = []
 
 function adicionar(){
-    novoAdicionar()
+    limparResposta()
 
     //Variáveis de Construção e  Funções de validação dos elementos
     var main = document.querySelector('main') 
@@ -76,17 +76,16 @@ function calcular(){
     var soma = 0
     var media = 0
 
-    console.log(vetor)
-
     for (var i in vetor){
-        soma += Number(vetor[i])
-        if(vetor[i] < menor){
+        soma += Number(vetor[i]) 
+        if (parseInt(vetor[i]) < parseInt(menor)){
             menor = vetor[i]
-        } 
-        if(vetor[i] > maior){
+        }
+        if (parseInt(vetor[i]) > parseInt(maior)){
             maior = vetor[i]
         }
     }
+
     media = soma / total
     media = media.toFixed(2)
 
@@ -106,6 +105,11 @@ function calcular(){
 
 }
 
+function reset(){
+    limparResposta()
+    limparSelect()
+    limparDataOut()
+}
 
 //Validações
 
@@ -141,11 +145,29 @@ function inputValido(){
     }        
 }
 
-function novoAdicionar(){
+function limparResposta(){
     var sectionAnswer = document.querySelector('section#answer')
     if (sectionAnswer != null){
         var parent = sectionAnswer.parentNode
         parent.removeChild(sectionAnswer)
+    }
+}
+
+function limparSelect(){
+    vetor.splice(0, vetor.length)
+
+    var selectVetor = document.querySelector('select#vetor')
+    if (selectVetor != null){
+        var parent = selectVetor.parentNode
+        parent.removeChild(selectVetor)
+    }
+}
+
+function limparDataOut(){
+    var sectionDataOut = document.querySelector('section#dataOut')
+    if (sectionDataOut != null){
+        var parent = sectionDataOut.parentNode
+        parent.removeChild(sectionDataOut)
     }
 }
 
@@ -202,6 +224,7 @@ function criarButton(id){
         input = document.createElement('input') 
         input.type = 'button'
         input.value = 'Calcular'
+        input.className = 'button'
         input.id = id
     }
     return input 
