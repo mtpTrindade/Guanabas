@@ -1,0 +1,15 @@
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* MAIN */
+main{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+/* FOOTER */
