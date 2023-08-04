@@ -3,9 +3,11 @@
 var vetor = []
 
 function adicionar(){
+    novoAdicionar()
+
     //Variáveis de Construção e  Funções de validação dos elementos
     var main = document.querySelector('main') 
-    var section = criarSection('answer')
+    var section = criarSection('dataOut')
     var div = criarDiv('erro')
     var p = criarP('message')
 
@@ -56,14 +58,52 @@ function adicionar(){
             select.appendChild(option)
             option.innerHTML = `${numero}`
 
-            var button = criarButton('button')
-            button.type = 'button'
+            var button = criarButton('calcular')
+            section.appendChild(button)
+            button.onclick = calcular
 
-            inputNumber.value = ''
         }  
     }
 
+    inputNumber.value = ''
     inputNumber.focus() 
+}
+
+function calcular(){
+    var total = vetor.length
+    var menor = vetor[0]
+    var maior = vetor[0]
+    var soma = 0
+    var media = 0
+
+    console.log(vetor)
+
+    for (var i in vetor){
+        soma += Number(vetor[i])
+        if(vetor[i] < menor){
+            menor = vetor[i]
+        } 
+        if(vetor[i] > maior){
+            maior = vetor[i]
+        }
+    }
+    media = soma / total
+    media = media.toFixed(2)
+
+    var main = document.querySelector('main') 
+    var section = criarSection('answer')
+    var p = criarP('message')
+
+    main.appendChild(section)
+    section.appendChild(p)
+    
+    p.innerHTML = `<strong>Dentro do vetor [${vetor}]: </strong><br>
+    - Há um total de ${total} itens; <br>
+    - O maior valor é ${maior}; <br>
+    - O menor valor é ${menor}; <br>
+    - A soma de todos os valores do vetor é ${soma}; <br>
+    - A média dos valores é ${media};`
+
 }
 
 
@@ -96,9 +136,17 @@ function validacaoRepeticao(n, v){
 function inputValido(){
     var div = document.querySelector('div#erro') 
     if (div != null) {
-        var main = div.parentNode
-        main.removeChild(div)
+        var parent = div.parentNode
+        parent.removeChild(div)
     }        
+}
+
+function novoAdicionar(){
+    var sectionAnswer = document.querySelector('section#answer')
+    if (sectionAnswer != null){
+        var parent = sectionAnswer.parentNode
+        parent.removeChild(sectionAnswer)
+    }
 }
 
 //Funções de criação de elementos
@@ -152,6 +200,8 @@ function criarButton(id){
     var input = document.querySelector('input#' + id) 
     if (input == null) { 
         input = document.createElement('input') 
+        input.type = 'button'
+        input.value = 'Calcular'
         input.id = id
     }
     return input 

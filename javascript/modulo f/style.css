@@ -50,7 +50,12 @@ main{
     border-radius: 8px;
 }
 
-/* DIV#DATAIN */
+p#message{
+    font-weight: bolder;
+    line-height: 1.3em;
+}
+
+/* SECTION#DATAIN */
 
 section#dataIn{
     width: 280px;
@@ -119,7 +124,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 /* INPUT#BUTTON */
 
-input#button{
+input#adicionar, input#calcular{
     appearance: none;
     outline: none;
     border: none;
@@ -137,7 +142,7 @@ input#button{
     border-radius: 8px;
 }
 
-input#button:hover{
+input#adicionar:hover, input#calcular:hover{
     background-color: rgba(0, 173, 173, 0.7);
     box-shadow: 2px 2px 4px black;
     border-radius: 8px;
@@ -145,15 +150,15 @@ input#button:hover{
     transition-duration: 0.3s;
 }
 
-input#button:active{
+input#adicionar:active, input#calcular:active{
     background-color: rgba(0, 173, 173);
     box-shadow: inset 1px 1px 2px black;
     border-radius: 8px;
 }
 
-/* DIV#RESPOSTA */
+/* SECTION#DATAOUT E SECTION#ANSWER */
 
-section#answer{
+section#dataOut, section#answer{
     width: 280px;
 
     margin: 8px;
@@ -183,7 +188,6 @@ div#erro{
     flex-direction: column;
     align-items: center;
 
-    font-weight: bolder;
     color: whitesmoke;
     text-shadow: 1px 1px 2px black;
     
