@@ -1,5 +1,141 @@
 @media screen and (max-width: 324px){
+    /* HEADER */
+    header{
+        height: 94px;
 
+        margin: 8px;
+        padding: 12px;
+
+        color: whitesmoke;
+        text-shadow: var(--text-shadow);
+
+        background-color: var(--block-color);
+
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .headerItems{
+        width: 100%;
+        display: flex;
+
+        justify-content: baseline;
+    }
+
+    header h1{
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 1.2em;
+    }
+
+    nav{
+        height: 100%;
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        z-index: 1
+    }
+
+    button{
+        height: 64px;
+        width: 64px;
+
+        text-align: center;
+        text-shadow: var(--text-shadow);
+
+        background-color: rgb(180, 140, 220);
+
+        border-radius: 8px;
+        border-style: none;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hide-menu{
+        position: fixed;
+        top: 88px;
+     
+        transform: scaleY(0);
+        visibility: hidden;
+        transform-origin: top center;
+        transition: transform 0.3s ease-in-out, visibility 0.2s ease-in;  
+
+        background-color: var(--item-color);
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    li{
+        height: 64px;
+        width: 64px; 
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        visibility: inherit;
+
+        color: black;
+
+        border-radius: 8px;
+    }
+
+    li:nth-child(even){
+        background-color: var(--item-color);    
+    }
+
+    li:nth-child(odd){
+        background-color: var(--item-ligth-color);
+    }
+
+    li:active, button:active{
+        color: whitesmoke;
+
+        background-color: var(--button-active);
+        box-shadow: var(--clicked-box-shadow);
+
+        transition: 0.1s ease-in-out;
+    }
+
+    li:focus, button:focus{
+        outline: none;
+    }
+
+    .show-menu{
+        transform: scaleY(1);
+        visibility: visible; 
+    }
+
+    /* MAIN */
+    main{
+        margin: 8px;
+        padding: 16px;
+
+        background-color: var(--block-color);
+
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    main h2{
+        color: whitesmoke;
+        text-shadow: var(--text-shadow);
+        font-size: 1.2em;
+    }
+
+    main p{
+        color: rgb(0, 0, 0);
+        text-shadow: var(--ligth-text-shadow);
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 324.1px) and (max-width: 612px) {

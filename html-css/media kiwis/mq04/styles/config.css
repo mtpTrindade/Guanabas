@@ -9,16 +9,24 @@
 
 :root{
     --text-shadow: 1px 1px 3px black;
-    --ligth-text-shadow: 1px 1px 1px black;
+    --ligth-text-shadow: 1px 1px 2px black;
 
+    --box-shadow: 1px 1px 4px black;
+    --clicked-box-shadow: inset 1px 1px 3px black;
+
+    --background-color: rgb(255, 230, 255);
+    --block-color: rgb(255, 200, 255);
+    --button-active: rgb(160, 110, 220);
+    --item-color: rgb(180, 140, 220);
+    --item-ligth-color: rgb(180, 120, 220);
 }
 
 body{
-    background-color: rgb(255, 230, 255);
+    background-color: var( --background-color);
 }
 
 p{
-    padding: 4px 0px;
+    padding: 8px 0px;
 }
 
 li{
@@ -32,3 +40,21 @@ a{
 ::-webkit-scrollbar{
     display: none;
 }
+
+@keyframes dropdown {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+        transform-origin: top center;
+        margin-top: -20px;
+      }
+      
+      
+      100% {
+        transform: scaleY(1);
+        opacity: 1;
+        transform-origin: top center;
+        margin-top: 0px;
+      }
+}
+

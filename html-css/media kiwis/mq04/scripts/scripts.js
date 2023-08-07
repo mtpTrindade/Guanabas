@@ -1,5 +1,6 @@
 
-function menuHamburguinho(){
-    var menu = document.querySelector('div#menuHamburguinho')
-    menu.classList.toggle("hide");
+function menuHamburguinho(){ 
+    var menu = document.querySelector('ul.hide-menu') 
+    menu.classList.toggle('show-menu')
+    
 }
