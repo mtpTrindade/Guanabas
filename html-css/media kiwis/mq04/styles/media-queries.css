@@ -2,11 +2,11 @@
     /* HEADER */
     header{
         height: 94px;
+        width: 90%;
 
         margin: 8px;
         padding: 12px;
 
-        color: whitesmoke;
         text-shadow: var(--text-shadow);
 
         background-color: var(--block-color);
@@ -28,7 +28,8 @@
         display: flex;
         align-items: center;
 
-        font-size: 1.2em;
+        color: whitesmoke;
+        font-size: 1em;
     }
 
     nav{
@@ -66,7 +67,7 @@
         transform: scaleY(0);
         visibility: hidden;
         transform-origin: top center;
-        transition: transform 0.3s ease-in-out, visibility 0.2s ease-in;  
+        transition: transform 0.3s ease-in-out, visibility 0.2s ease-in-out; 
 
         background-color: var(--item-color);
         border-radius: 8px;
@@ -116,6 +117,8 @@
 
     /* MAIN */
     main{
+        width: 90%;
+
         margin: 8px;
         padding: 16px;
 
@@ -128,7 +131,7 @@
     main h2{
         color: whitesmoke;
         text-shadow: var(--text-shadow);
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     main p{
@@ -140,88 +143,259 @@
 
 @media screen and (min-width: 324.1px) and (max-width: 612px) {
     
-    /* HEADER */
     header{
         height: 94px;
-
-        align-items: flex-start;
+        width: 95%;
 
         margin: 8px;
-        padding: 12px;
+        padding: 12px 24px;
 
-        color: whitesmoke;
         text-shadow: var(--text-shadow);
 
-        background-color: rgb(255, 200, 255);
+        background-color: var(--block-color);
 
         border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .headerItems{
+        width: 100%;
+        display: flex;
+
+        justify-content: space-between;
     }
 
     header h1{
-        height: 100%;
+        width: 70%;
+
         display: flex;
         align-items: center;
+
+        color: whitesmoke;
+        font-size: 1.5em;
     }
 
     nav{
-        width: 96px;
+        height: 100%;
+        width: 66px;
 
-        background-color: rgb(180, 140, 220);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        border-radius: 8px;
+        position: relative;
 
-        z-index: 1;
+        z-index: 1
     }
-
 
     button{
-        width: 94px;
+        height: 64px;
+        width: 64px;
 
         text-align: center;
+        text-shadow: var(--text-shadow);
 
         background-color: rgb(180, 140, 220);
 
         border-radius: 8px;
-
         border-style: none;
+        box-shadow: var(--box-shadow);
     }
 
+    .hide-menu{
+        position: fixed;
+        top: 88px;
+     
+        transform: scaleY(0);
+        visibility: hidden;
+        transform-origin: top center;
+        transition: transform 0.3s ease-in-out, visibility 0.2s ease-in-out;  
+
+        background-color: var(--item-color);
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
 
     li{
-        width: 100%;
+        height: 64px;
+        width: 64px; 
 
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        padding: 24px 32px;
+        visibility: inherit;
 
         color: black;
 
+        border-radius: 8px;
+    }
+
+    li:nth-child(even){
+        background-color: var(--item-color);    
+    }
+
+    li:nth-child(odd){
+        background-color: var(--item-ligth-color);
+    }
+
+    li:active, button:active{
+        color: whitesmoke;
+
+        background-color: var(--button-active);
+        box-shadow: var(--clicked-box-shadow);
+
+        transition: 0.1s ease-in-out;
+    }
+
+    li:focus, button:focus{
+        outline: none;
+    }
+
+    .show-menu{
+        transform: scaleY(1);
+        visibility: visible; 
+    }
+
+    /* MAIN */
+    main{
+        width: 95%;
+
+        margin: 8px;
+        padding: 12px 24px;
+
+        align-items: center;
+
+        background-color: var(--block-color);
+
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    main h2{
+        color: whitesmoke;
+        text-shadow: var(--text-shadow);
+        font-size: 1.5em;
+    }
+
+    main p{
+        color: black;
+        text-shadow: var(--ligth-text-shadow);
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 612.1px) {
+    header{
+        height: 94px;
+        width: 95%;
+        max-width: 1024px;
+
+        margin: 8px;
+        padding: 12px 24px;
+        
+        text-shadow: var(--text-shadow);
+        
+        background-color: var(--block-color);
+
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .headerItems{
+        width: 100%;
+        display: flex;
+    }
+
+    header h1{
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+
+        color: whitesmoke;
+
+        font-size: 2em;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        height: 0px;
+        width: 0px;
+
+        display: none;
+        visibility: hidden;
+    }
+
+    .hide-menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        height: 64px;
+        width: 64px; 
+
+        margin: 4px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--item-ligth-color);
+
+        color: black;
+
+        box-shadow: var(--box-shadow);
         border-radius: 8px;
     }
 
     li:active, button:active{
         color: whitesmoke;
 
-        background-color: rgb(160, 110, 220);
+        background-color: var(--button-active);
+        box-shadow: var(--clicked-box-shadow);
 
-        transition-duration: 0.1s;
+        transition: 0.1s ease-in-out;
     }
 
-    .hide{
-        display: none;
+    li:focus, button:focus{
+        outline: none;
     }
 
     /* MAIN */
     main{
-        margin: 8px;
-        padding: 16px;
+        width: 95%;
+        max-width: 1024px;
 
+        margin: 8px;
+        padding: 12px 24px;
+
+        align-items: center;
+
+        background-color: var(--block-color);
+
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    main h2{
         color: whitesmoke;
         text-shadow: var(--text-shadow);
+        font-size: 2em;
     }
 
     main p{
         color: black;
+        text-shadow: var(--ligth-text-shadow);
+        font-size: 1.3em;
     }
 
 }
