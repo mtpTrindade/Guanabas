@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-shadow: 1px 1px 3px black;
+    --ligth-text-shadow: 1px 1px 2px black;
+
+    --box-shadow: 1px 1px 4px black;
+    --input-shadow: 1px 2px 3px black;
+    --clicked-box-shadow: inset 1px 1px 3px black;
+
+    --background-color: rgb(255, 221, 180);
+    --background-contrast: rgb(0, 40, 60);
+
+    --button-color: rgb(0, 0, 127);
+    --active-button-color: rgb(0, 0, 167);
+    --hover-button-color: rgb(0, 0, 147);
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aqua;
+    background-image: url(../images/background-image.jpg);
+    background-repeat: no-repeat;
+}
+
+@media (hover: hover){
+    
+    input:hover{
+        background-color: rgb(66, 66, 118); 
+        transition-duration: 0.1s;
+
+        cursor: pointer;
+    }
+
+}

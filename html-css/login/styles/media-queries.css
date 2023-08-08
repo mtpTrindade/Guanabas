@@ -1,0 +1,292 @@
+/*
+
+@media screen and (max-width: 280px) {
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+
+    main{
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: beige;
+        border-radius: 8px;
+    }
+
+    section#text{
+        min-height: 94px;
+
+        padding: 12px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.1em;
+        font-style: italic;
+        color: whitesmoke;
+        text-shadow: var(--text-shadow);
+
+        background-image: url(../images/login-image.jpg);
+        background-size: cover;
+        background-position: center;
+
+        border-radius: 8px 8px 0px 0px;
+        box-shadow: var(--box-shadow);
+
+        z-index: 1;
+    }
+
+    section#text > p{
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    section#dataIn{
+        padding: 8px;
+
+        display: flex;
+        flex-direction: column;
+
+        font-family: 'Roboto', sans-serif;
+        color: whitesmoke;
+        text-shadow: var(--ligth-text-shadow);
+
+        background-color: var(--background-color);
+        background-image: linear-gradient(200deg, var(--background-color), var(--background-contrast));
+
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+    div#form{
+        padding: 0px 8px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#commit{
+        padding: 0px 8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label{
+        width: 100%;
+
+        padding: 4px;
+        font-weight: bold;
+
+        display: flex;
+        flex-direction: column;  
+    }
+
+    input{
+        width: 100%;
+
+        margin: 4px 0px;
+        padding: 4px;
+
+        text-align: center;
+        font-style: italic;
+
+        border-style: none;
+        border-radius: 8px;
+        box-shadow: var(--input-shadow);
+    }
+
+    input:focus{
+        box-shadow: var(--clicked-box-shadow);
+        outline: none;
+
+        transition-duration: 0.3s ease-in-out;
+    }
+
+    div#login{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        margin: 8px;
+
+        font-size: 0.9em;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    a:active{
+        color: var(--button-color);
+        transition: 0.1s ease-out;
+    }
+
+    div#create-account{
+        width: 100%;
+
+        margin: 8px;
+        padding: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 2px solid var(--background-contrast);
+    }
+
+    div#create-account > p{
+        margin: 4px;
+
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    input#button{
+        width: fit-content;
+
+        margin: 8px;
+        padding: 8px 16px;
+        
+        font-family: 'Roboto', sans-serif;
+        color: whitesmoke;
+        text-shadow: var(--ligth-text-shadow);
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.1em;
+
+        background-color: var(--button-color);
+        box-shadow: var(--input-shadow);
+    }
+
+    input#button:active{
+        background-color: var(--active-button-color);
+        box-shadow: var(--clicked-box-shadow);
+
+        transition: 0.1s;
+    }
+
+
+}*/
+@media screen and (min-width: 280.1px) and (max-width: 330px){
+    section#text{
+        font-size: 1.1em;     
+    }
+}
+
+@media screen and (min-width: 330.1px) and (max-width: 380px){
+    section#text{
+        font-size: 1.3em;     
+    }
+}
+
+@media screen and (min-width: 380.1px) and (max-width: 800px) {
+    section#text{
+        font-size: 1.5em;     
+    }
+
+    section#text > p{
+        font-size: 1.3em;
+    }
+
+    label{
+        font-size: 1.2em;   
+    }
+
+    input{
+        font-size: 0.6em;   
+    }
+
+    a{
+        font-size: 1em;
+    }
+
+    div#create-account > p{
+        font-size: 1.2em;
+    }
+
+    #commit-buttons{
+        margin: 24px;
+     
+        flex-direction: row;
+    }
+
+    input#button{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 800.1px) and (max-width: 2160px) {
+    main{
+        height: 540px;
+        max-width: 720px;
+        flex-direction: row;
+    }
+    
+    section#text{
+        width: 50%;
+        
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        font-size: 2em; 
+        text-align: center;
+        
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    section#text > h1{
+        margin: 104px 0px;
+    }
+
+    section#text > p{
+        margin: 20px 0px;
+    }
+
+    section#dataIn{
+        width: 50%;
+
+        justify-content: center;
+
+        border-radius: 0px 8px 8px 0px ;
+    }
+
+    label{
+        font-size: 1.3em;   
+    }
+
+    input{
+        font-size: 0.7em;   
+    }
+
+    a{
+        font-size: 1.2em;
+    }
+
+    div#create-account > p{
+        font-size: 1.3em;
+    }
+
+    #commit-buttons{
+        margin: 24px;
+     
+        flex-direction: row;
+    }
+
+    input#button{
+        font-size: 1.3em;
+    }
+}
