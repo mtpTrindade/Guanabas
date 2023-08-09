@@ -18,36 +18,43 @@
             <p>Create Account!</p>
         </section>
 
-        <section id="dataIn">
+        <fieldset id="dataIn">
             <div id="form">
                 <label for="name-id">
                     Name: <input type="text" 
                     name="name" id="name-id"
                     placeholder="Name">
+                    <span id="name-span"></span>
                 </label>
+
                 <label for="email-id">
                     Email: <input type="email" 
                     name="email" id="email-id"
                     placeholder="example@email.com">
+                    <span id="email-span"></span>
                 </label>
+
                 <label for="birth-id">
                     Date of birth: <input type="date" 
                     name="birth" id="birth-id">
+                    <span id="birth-span"></span>
                 </label>
+
                 <label for="password-id">
                     Password: <input type="password" 
                     name="password" id="password-id"
-                    placeholder="Minimum 8 characters">
+                    placeholder="Password">
+                    <span id="password-span"></span>
                 </label>
             </div>
 
             <div id="commit">
                 <div id="commit-buttons">
-                    <input type="button" id="button" value="Create Account" onclick="createAccount()">
-                    <input type="button" id="button" value="Cancel" onclick="toLogin()">
+                    <input type="button" id="button" value="Create Account" onclick="CreateAccount()">
+                    <input type="button" id="button" value="Cancel" onclick="ToLogin()">
                 </div>   
             </div>
-        </section>
+        </fieldset>
     </main>
 </body>
 </html>

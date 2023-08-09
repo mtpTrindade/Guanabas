@@ -206,7 +206,7 @@
     }
 
     input{
-        font-size: 0.6em;   
+        font-size: 0.8em;   
     }
 
     a{
@@ -256,7 +256,7 @@
         margin: 20px 0px;
     }
 
-    section#dataIn{
+    fieldset#dataIn{
         width: 50%;
 
         justify-content: center;

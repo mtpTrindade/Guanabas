@@ -17,34 +17,37 @@
             <h1>Connect with the STARS!</h1>
             <p>Login:</p>
         </section>
-        <section id="dataIn">
+
+        <fieldset id="dataIn">
             <div id="form">
-                <label for="email-id">
-                    User: <input type="email" 
-                    name="email" id="email-id"
+                <label for="user-id">
+                    User: <input type="text" 
+                    name="user" id="user-id"
                     placeholder="Name or E-mail">
+                    <span id="user-span"></span>
                 </label>
                 <label for="password-id">
                     Password: <input type="password" 
                     name="password" id="password-id"
-                    placeholder="Minimum 8 characters">
+                    placeholder="Password">
+                    <span id="password-span"></span>
                 </label>
 
             </div>
             <div id="commit">
                 <div id="login">
-                    <input type="button" id="button" value="Login" onclick="login()">
-                    <a onclick="forgotPassword()">Forgot my password...</a>
+                    <input type="button" id="button" value="Login" onclick="Login()">
+                    <div id="forgot-password"><a onclick="ForgotPassword()">Forgot my password...</a></div>
                 </div>
                 <div id="create-account">
                     <p>
                         Don't have a account?<br> 
                         Join us!
                     </p>
-                    <input type="button" id="button" value="Create Account" onclick="toCreateAccount()">
+                    <input type="button" id="button" value="Create Account" onclick="ToCreateAccount()">
                 </div>
             </div>
-        </section>
+        </fieldset>
     </main>
 </body>
 </html>
