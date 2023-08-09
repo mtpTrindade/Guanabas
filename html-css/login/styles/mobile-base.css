@@ -1,15 +1,17 @@
 /* MOBILE FIRST (max-width: 280px) */
 
 body{
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/background-image-portrait.jpg);
+    background-size: auto;
+    background-position: top center;
 }
 
 main{
-    width: fit-content;
+    height: fit-content;
+    width: 95%;
     max-width: 480px;
 
-    margin: 16px;
+    margin: 12px;
 
     display: flex;
     flex-direction: column;
@@ -122,7 +124,7 @@ span{
     color: red;
 }
 
-div#login{
+div#login-buttons{
     width: 100%;
     
     display: flex;
