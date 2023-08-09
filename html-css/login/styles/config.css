@@ -13,14 +13,15 @@
 
     --box-shadow: 1px 1px 4px black;
     --input-shadow: 1px 2px 3px black;
+    --input-hover-shadow: 2px 3px 4px black;
     --clicked-box-shadow: inset 1px 1px 3px black;
 
     --background-color: rgb(255, 221, 180);
     --background-contrast: rgb(0, 40, 60);
 
     --button-color: rgb(0, 0, 127);
-    --active-button-color: rgb(0, 0, 167);
-    --hover-button-color: rgb(0, 0, 147);
+    --hover-button-color: rgb(0, 0, 167);
+    --active-button-color: rgb(0, 0, 147);
 }
 
 body{
@@ -38,10 +39,24 @@ body{
 @media (hover: hover){
     
     input:hover{
-        background-color: rgb(66, 66, 118); 
-        transition-duration: 0.1s;
+        box-shadow: var(--input-hover-shadow); 
+        
+        transition-duration: 0.3s;
 
         cursor: pointer;
+    }
+
+    input#button:hover{
+        background-color: var(--hover-button-color);
+        box-shadow: var(--input-hover-shadow);
+
+        transition-duration: 0.3s;
+    }
+
+    a:hover{
+        color: var(--hover-button-color);
+ 
+        transition-duration: 0.3s;
     }
 
 }
